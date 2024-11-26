@@ -63,9 +63,16 @@ let randomElement = array[randomIndex];
           (computervalue === "rock" && randomElement === "scissor") ||
           (computervalue === "scissor" && randomElement === "rock")
         ) {
-          score.win += 1;
+          score.win += 1; 
+         
+            
+          
         } else {
-          score.loses += 1;
+         
+            score.loses += 1;
+
+        
+          
         }
       }
 
@@ -96,7 +103,11 @@ function gamestart(value) {
     (computervalue === "paper" && value === "paper") ||
     (computervalue === "rock" && value === "rock")
   ) {
-    score.tie += 1;
+    if (score.tie>=10){
+      score.tie=10
+    }else{
+   score.tie+= 1;     
+    }
   } else {
     if (
       (computervalue === "scissor" && value === "paper") ||
@@ -104,9 +115,21 @@ function gamestart(value) {
       (computervalue === "rock" && value === "scissor") ||
       (computervalue === "scissor" && value === "rock")
     ) {
-      score.win += 1;
+      if (score.win>=10){
+        score.win=10
+      }else{
+     score.win += 1;     
+      }
+      
+      
+      
     } else {
-      score.loses += 1;
+      if (score.loses>=10){
+        score.loses=10
+        document.body.innerHTML="hellworld"
+      }else{
+     score.loses+= 1;     
+      }
     }
   }
 

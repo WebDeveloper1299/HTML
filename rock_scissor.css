@@ -72,8 +72,7 @@ button.autoplay{
   transition: all 0.3s ease-in-out;
 
 }
-
-button.reset:hover, button.autoplay:hover{
+on.reset:hover, button.autoplay:hover{
   transform: scale(1.1);
 
 }
