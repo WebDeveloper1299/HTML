@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="rock_scissor.css" rel="stylesheet"/>
+  <title>Rock-Scissor</title>
+</head>
+<body>
+  <h1>Rock-Scissor-Paper</h1>
+
+  <div class="container">
+    <div><button class="rock" onclick="gamestart('rock')">Rock</button></div>
+    <div><button onclick="gamestart('scissor')" class="scissor">Scissor</button></div>
+    <div><button class="paper" onclick="gamestart('paper')">paper</button></div>
+  </div>
+  <div>
+    <p>Computer Move:<span class="computer-move"></span></p>
+    <p>User Move:<span class="user-move"></span></p>
+  </div>
+  <div class="container3">
+    <p style="display: block;">Your Score: </p><br/>
+    <span>tie:</span><p class="tie">0</p>
+    <span>win:</span><p class="win">0</p>
+    <span>loss:</span><p class="loss">0</p>
+  </div>
+  <div class="container2">
+    <button class="reset" onclick="ResetScore()">Reset Score</button>
+    <button class="autoplay" onclick="autoplay()">Auto play </button>
+  </div>
+  
+  <script src="rock-scissor.js"></script>
+</body>
+</html>
