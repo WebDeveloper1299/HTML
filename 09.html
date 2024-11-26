@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+
+<body>
+  <p>Youtube Subscribe Button </p>
+  <button class="sub" onclick="SubscribeChange()">Subscribe</button>
+  <p>Rock Paper Scissors</p>
+  <button onkeydown="" onclick="
+  const computerResult = computerMove();
+  if (computerResult==='Rock'){
+    ScoreObject.tie+=1
+  }
+
+  "><img src="Screenshot 2024-11-24 001140.png" class="rock-image" alt="rock"/></button>
+  <button><img src="Screenshot 2024-11-24 001203.png" class="rock-image" alt="Scissors"/></button>
+  <button ><img src="Screenshot 2024-11-24 001153.png" class="rock-image" alt="paper"/></button>
+  <p></p>
+  <button
+  onclick="
+  ScoreObject.lose=0;
+  ScoreObject.tie=0;
+  ScoreObject.win=0;
+  localStorage.removeItem('Score')
+  UpdateScore()
+  "
+  >Reset score</button>
+  <p>Amazon Shipping Calculator </p>
+  <input class="cost-order" placeholder="Cost of order" onkeydown="CalculateCost(event)"/>
+  <p>Order under $40 =+ 10 shipping .</p>
+  <p>Order over $40 = Free shipping .</p>
+  <button  class="calc">Calculate</button>
+<p class="cost"></p>
+  <!-- <p class="display"></p>
+  <button class="c" onclick="changing()">hellworld</button>
+  <button class="button1">helloworld1</button> -->
+  <footer>
+    <!--this is where the footer element will be resides-->
+  </footer>
+  <script src="script.js">
+  </script>
+</body>
+</html>

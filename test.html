@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    const arrays = [1,2,3,4]
+    console.log(typeof arrays)
+    console.log(arrays[1])
+    console.log(arrays.length)
+  arrays[0]=22
+  console.log(arrays)
+  console.log(Array.isArray([1,2,3,4]))
+  arrays.push(100)
+  Array.isArray([1,2,3,3,4])
+  console.log(arrays)
+  //starting index and ending index 
+  arrays.splice(1,3)
+  console.log(arrays)
+  Array.isArray([1,2,3])
+  arrays.push([1,2,3])
+console.log(arrays[2])
+  //array index 
+  window.console.log(arrays.splice(1,3))
+  </script>
+</body>
+</html>

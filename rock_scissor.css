@@ -1,13 +1,8 @@
 body{
   padding: 0;
   margin: 10%;
+  background-color: azure;
 }
-/* .title{
-  font-weight: bold;
-  font-size: 10px;
-  color:aquamarine;
-  word-spacing: 10px ;
-} */
 .container{
   display: grid;
   grid-template-columns: 100px 100px 100px;
@@ -60,6 +55,10 @@ button.reset{
   color:green;
   font-weight: 800;
   cursor: pointer;
+  box-shadow: 10px 10px black;
+  transition: all 0.3s ease-in-out;
+margin-left: 20px;
+
 }
 button.autoplay{
   border:none;
@@ -69,4 +68,12 @@ button.autoplay{
   cursor: pointer;
   color:black;
   font-weight: 800;
+  box-shadow: 10px 10px  black;
+  transition: all 0.3s ease-in-out;
+
+}
+
+button.reset:hover, button.autoplay:hover{
+  transform: scale(1.1);
+
 }
